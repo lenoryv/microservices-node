@@ -18,7 +18,7 @@ stan.on('connect', async () => {
 app.use(express.json())
 
 
-mongoose.connect(`mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}`, {useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.g8aip.mongodb.net/?retryWrites=true&w=majority`, {useNewUrlParser: true});
 mongoose.connection.once('open', function() {
   console.log("Connection Successful!");
 });

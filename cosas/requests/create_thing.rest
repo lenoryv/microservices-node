@@ -1,0 +1,6 @@
+POST http://localhost:3333/api/cosas 
+Content-Type: application/json
+
+{
+"nombre": "televisor"
+}
